@@ -1,0 +1,42 @@
+.food-head {
+  color: red;
+  text-align: center;
+}
+
+.p{
+  text-align: left;
+  margin-left: 20px;
+}
+.food-item {
+  color: blueviolet;
+  font-weight: 600;
+}
+.items {
+  /* background-color: aqua; */
+}
+.con {
+  width: 50%;
+  padding: 15;
+  min-width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.button1 {
+  float: right;
+}
+.foodItem {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
