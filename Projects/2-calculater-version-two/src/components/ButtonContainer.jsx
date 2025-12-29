@@ -1,7 +1,7 @@
-import React from "react";
+ import React from "react";
 // import ButtonContainer from './ButtonContainer';
 
-const ButtonContainer = () => {
+const ButtonContainer = ({onButtonClick}) => {
   const input = [
     "c",
     "1",
@@ -24,7 +24,7 @@ const ButtonContainer = () => {
   return (
     <div className="ButtonContainer">
       {input.map((button) => (
-        <button className="button">{button}</button>
+        <button className="button" onClick={()=>onButtonClick(button)}>{button}</button>
       ))}
     </div>
   );

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Display = () => {
+const Display = ({calVal}) => {
   return (
     <div>
-        <input type="text" className='input' />
+        <input type="text" className='input' value={calVal} readOnly/>
     </div>
   )
 }
