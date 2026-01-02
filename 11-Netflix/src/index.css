@@ -1,0 +1,24 @@
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  color: #111;
+  border: #00d8ff 2px solid;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00d8ff;
+}
