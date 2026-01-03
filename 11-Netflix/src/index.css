@@ -20,5 +20,27 @@
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #00d8ff;
+  color: black;
+}
+
+.rating{
+  color: black;
+  background-color: #00d8ff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.rating1{
+  color: black;
+  background-color: yellow;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 2px 5px;
 }
