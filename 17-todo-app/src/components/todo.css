@@ -123,7 +123,7 @@ span {
 }
 
 .todo-item {
-  margin: 2.4rem;
+  margin: 1rem;
   /*word-wrap: break-word;
     */ /*flex-wrap: wrap;
     */
@@ -132,15 +132,14 @@ span {
   border-radius: 30px;
   transition: background-color 200ms ease-in-out;
   background-color: #f2f3f4;
-  min-width: 35rem;
+  min-width: 25rem;
   max-width: 40rem;
-  padding: 1.6rem 3rem;
+  padding: 0.5rem 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 0.3fr 0.3fr;
+  grid-template-columns: 1fr 0.2fr 0.1fr;
   justify-content: start;
-  gap: 1.6rem;
-  /*align-items: center;
-    */ /*wrapsthelinks*/
+  gap: 1rem;
+   align-items: center;
   overflow-wrap: anywhere;
 }
 
@@ -151,12 +150,13 @@ li span {
 
 .check-btn,
 .delete-btn {
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   width: 3rem;
   height: 3rem;
   border-radius: 80%;
   margin: 0 5px;
+  padding-top: 7px;
   background-color: #fff;
   color: rgb(0, 0, 0);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
