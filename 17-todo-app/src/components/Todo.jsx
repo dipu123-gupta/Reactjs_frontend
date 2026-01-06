@@ -1,16 +1,19 @@
 import "./todo.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import {MdDeleteForever } from "react-icons/io";
 import { MdCheck, MdDeleteForever } from "react-icons/md";
 
 const Todo = () => {
   const [inputValue, setInputValue] = useState("");
   const [task, setTask] = useState([]);
+  const [time, setTime] = useState(null);
 
+  // ! Input Functionality 
   const handleInputChange = (value) => {
     setInputValue(value);
   };
 
+  // ! Submit Functionality
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -23,14 +26,31 @@ const Todo = () => {
     setTask((prevTasks) => [...prevTasks, inputValue]);
     setInputValue("");
   };
+
+  // ! Date and Time Functionality
+  const getdateTime = () => {
+  const now = new Date();
+    const formattedTime = now.toLocaleTimeString();
+    const formattedDate = now.toLocaleDateString();
+    return (`${formattedDate} - ${formattedTime}`);
+  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(getdateTime());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
   // setInputValue("");
 
   return (
     <section className="todo-container">
       <header>
         <h1>Todo App</h1>
+        <h2 className="date-time"> {getdateTime()} </h2>
       </header>
       <section className="form">
+        
         <form onSubmit={handleSubmit} className="todo-form">
           <div>
             <input
